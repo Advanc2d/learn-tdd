@@ -23,7 +23,7 @@ class ProductServiceTest {
     @Test
     void 상품수정() {
         final Long productId = 1L;
-        final UpdateProductRequest request = new UpdateProductRequest("상품 수정", 2000, DiscountPolicy.NONE);
+        final UpdateProductRequest request = ProductSteps.상품수정요청_생성();
         final Product product = new Product("상품명", 1000, DiscountPolicy.NONE);
         Mockito.when(productPort.getProduct(productId)).thenReturn(product);
 
