@@ -1,5 +1,8 @@
 package com.example.tdd.payment;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class ConsolePaymentGatewayImpl implements PaymentGateway {
 
     @Override
