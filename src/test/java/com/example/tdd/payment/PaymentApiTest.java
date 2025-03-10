@@ -2,11 +2,11 @@ package com.example.tdd.payment;
 
 import com.example.tdd.ApiTest;
 import com.example.tdd.order.OrderSteps;
+import com.example.tdd.payment.application.service.PaymentRequest;
 import com.example.tdd.product.ProductSteps;
 import io.restassured.response.ExtractableResponse;
 import io.restassured.response.Response;
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.http.HttpStatus;
 
 import static org.assertj.core.api.Assertions.assertThat;

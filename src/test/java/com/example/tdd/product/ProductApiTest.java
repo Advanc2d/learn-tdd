@@ -1,6 +1,7 @@
 package com.example.tdd.product;
 
 import com.example.tdd.ApiTest;
+import com.example.tdd.product.adapter.ProductRepository;
 import io.restassured.response.ExtractableResponse;
 import io.restassured.response.Response;
 import org.junit.jupiter.api.Test;

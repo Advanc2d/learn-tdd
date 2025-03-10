@@ -1,4 +1,4 @@
-package com.example.tdd.product;
+package com.example.tdd.product.domain;
 
 import lombok.AccessLevel;
 import lombok.Getter;

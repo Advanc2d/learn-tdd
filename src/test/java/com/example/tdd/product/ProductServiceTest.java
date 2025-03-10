@@ -1,5 +1,10 @@
 package com.example.tdd.product;
 
+import com.example.tdd.product.application.port.ProductPort;
+import com.example.tdd.product.application.service.ProductService;
+import com.example.tdd.product.application.service.UpdateProductRequest;
+import com.example.tdd.product.domain.DiscountPolicy;
+import com.example.tdd.product.domain.Product;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
