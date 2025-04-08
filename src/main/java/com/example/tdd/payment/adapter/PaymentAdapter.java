@@ -2,20 +2,22 @@ package com.example.tdd.payment.adapter;
 
 import com.example.tdd.order.domain.Order;
 import com.example.tdd.order.adapter.OrderRepository;
-import com.example.tdd.payment.Payment;
-import com.example.tdd.payment.PaymentPort;
+import com.example.tdd.payment.application.port.PaymentPort;
+import com.example.tdd.payment.domain.Payment;
 import org.springframework.stereotype.Component;
 
 @Component
 class PaymentAdapter implements PaymentPort {
     private final PaymentGateway paymentGateway;
-    private final PaymentRepository paymentRepository;
     private final OrderRepository orderRepository;
+    private final PaymentRepository paymentRepository;
 
-    PaymentAdapter(PaymentGateway paymentGateway, PaymentRepository paymentRepository, OrderRepository orderRepository) {
+    PaymentAdapter(PaymentGateway paymentGateway,
+                   OrderRepository orderRepository,
+                   PaymentRepository paymentRepository) {
         this.paymentGateway = paymentGateway;
-        this.paymentRepository = paymentRepository;
         this.orderRepository = orderRepository;
+        this.paymentRepository = paymentRepository;
     }
 
     @Override
@@ -33,4 +35,5 @@ class PaymentAdapter implements PaymentPort {
     public void save(Payment payment) {
         paymentRepository.save(payment);
     }
+
 }

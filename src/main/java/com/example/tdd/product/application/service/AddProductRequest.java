@@ -3,9 +3,9 @@ package com.example.tdd.product.application.service;
 import com.example.tdd.product.domain.DiscountPolicy;
 import org.springframework.util.Assert;
 
-record AddProductRequest(String name, int price, DiscountPolicy discountPolicy) {
+public record AddProductRequest(String name, int price, DiscountPolicy discountPolicy) {
 
-    AddProductRequest(final String name, final int price, final DiscountPolicy discountPolicy) {
+    public AddProductRequest(final String name, final int price, final DiscountPolicy discountPolicy) {
         this.name = name;
         this.price = price;
         this.discountPolicy = discountPolicy;

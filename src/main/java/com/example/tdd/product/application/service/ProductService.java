@@ -1,6 +1,6 @@
 package com.example.tdd.product.application.service;
 
-import com.example.tdd.product.ProductPort;
+import com.example.tdd.product.application.port.ProductPort;
 import com.example.tdd.product.domain.Product;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 public class ProductService {
     private final ProductPort productPort;
 
-    ProductService(ProductPort productPort) {
+    public ProductService(ProductPort productPort) {
         this.productPort = productPort;
     }
 

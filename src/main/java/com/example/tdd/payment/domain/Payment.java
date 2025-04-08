@@ -11,6 +11,7 @@ import javax.persistence.*;
 @Entity
 @Getter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
+public
 class Payment {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
